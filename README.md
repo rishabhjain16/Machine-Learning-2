@@ -66,3 +66,36 @@ Underfitting means that training error rate in the model is too high while overf
 From the results, we can see that KNN given the accuracy of 65% and Linear Regression predicts an accuracy of 83%. Based on this prediction we can say that; Linear Regression might be a better algorithm than Linear Regression for prediction the variety of our steel dataset. As the dataset contains only 553 values, the model is trained on 387 values and testing is done on 166 values. It won’t be a good criterion to access the model based on this single test. Therefore, later we performed a 10-fold Cross Validation on both our algorithm to get a different set of accuracies for different set of test data build by Cross Validation as cv=10. Taking mean of these accuracy for comparing both the algorithms, we found that KNN gave an average accuracy of 35% after 10-fold cross validation while Linear Regression gave an average accuracy of 68.8%. We still can’t say for sure as both results are not great for comparison.  Now, we are performing RMSE and MAE on our predicted and test values. MAE measures the overall magnitude of the errors in a set of predictions. It is the average of the absolute differences between predicted and actual values where all singular distances have equal weights. It doesn’t consider the direction. RMSE is the square root of average of squared differences between actual and predicted values. RMSE is more useful when large errors are undesirable.
 
 For my model, I am performing both the metric for evaluation, RMSE AND MAE. The RMSE for Linear Regression is 39.7 and MAE for Linear Regression is 32.3. While RMSE for KNN is 57.38 and MAE for KNN is 42.2. Lower the value of error, better will be the model. As we can see RMSE and MAE are both low for Linear Regression and comparatively higher for KNN. Both the models give very different results in terms of accuracy, RMSE and MAE. This result is due to that fact that KNN is slower when we have a real-world scenario. We need to provide a proper scaling for fair treatment among features of KNN. Hyperparameters like K-value and Distance function also effect the model accuracy. Whereas Linear Regression can be used easily for real-world problems. It can also be easily implemented for space complex solution. It can perform well when there are large number of features as compared to KNN which might be the problem in our dataset. Given such large number of features might be difficult for KNN to make a good prediction model. Also, KNN is slower than Linear regression as Linear regression can easily get output values from the already tuned coefficients while KNN have to keep a track of all the training data and finding the neighbour node. Considering these factors, we can conclude that Linear Regression is a better regression algorithm than KNN for our ‘steel.txt’ dataset.
+
+
+## REFERENCES AND ACKOWLEDGEMENT: 
+
+•	https://www.udemy.com/course/machinelearning/ (Machine Learning A-Z™: Hands-On Python & R in Data Science)
+
+•	https://towardsdatascience.com/building-a-k-nearest-neighbors-k-nn-model-with-scikit-learn-51209555453a
+
+•	https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
+
+•	https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+
+•	https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
+
+•	https://www.analyticsvidhya.com/blog/2018/08/k-nearest-neighbor-introduction-regression-python/
+
+•	https://www.statisticssolutions.com/what-is-linear-regression/
+
+•	https://towardsdatascience.com/linear-regression-detailed-view-ea73175f6e86
+
+•	https://machinelearningmastery.com/linear-regression-for-machine-learning/
+
+•	https://datafai.com/2017/10/31/python-machine-learning-linear-regression-with-scikit-learn/
+
+•	https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d
+
+•	https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/
+
+•	https://blog.usejournal.com/a-quick-introduction-to-k-nearest-neighbors-algorithm-62214cea29c7
+
+•	https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
+
+•	https://d2l.ai/chapter_multilayer-perceptrons/underfit-overfit.html
