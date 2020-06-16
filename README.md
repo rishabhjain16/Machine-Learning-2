@@ -10,7 +10,7 @@ K-Nearest Neighbour is a supervised learning Machine learning model. Supervised 
 I am using K-Nearest Neighbour because it is easy to implement and a simple machine learning model. There are only few parameters to tune when it comes to KNN. I have also used KNN for classification for my first Machine Learning assignment, therefore I was curious to see how it can be used for regression as well. Choosing the correct K value is very important for KNN to give accurate predictions. KNN is used in recommender systems (e.g. Netflix, Spotify etc.)
 
 ## Preparing the data for ML package:
-1.	Download the “steel.txt” file from blackboard.
+1.	Download the “steel.txt”.
 2.	Open excel and import the .txt file.
 3.	Use excel to Delimit the file as “Characters such as commas or tabs separate each field”.
 4.	Add the title to each file
